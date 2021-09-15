@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Theme Changer</string>
+    <string name="label_inside_activity">Меняем тему внутри активити</string>
+    <string name="label_inside_fragment">Меняем тему внутри фрагмента</string>
+    <string name="theme_one">ThemeOne</string>
+    <string name="theme_second">ThemeSecond</string>
+</resources>
