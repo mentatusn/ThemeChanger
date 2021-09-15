@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Theme Changer</string>
-    <string name="label_inside_activity">Меняем тему внутри активити</string>
-    <string name="label_inside_fragment">Меняем тему внутри фрагмента</string>
+    <string name="label_inside_activity">меняет тему внутри активити(для активити и всех ее фрагментов( если те не "против")!)</string>
+    <string name="label_inside_fragment">меняет тему для всего приложения(для активити и всех ее фрагментов( если те не "против")!)</string>
+    <string name="label_inside_fragment_local">меняет тему только для себя(и игнорирует общую тему родителя)</string>
     <string name="theme_one">ThemeOne</string>
     <string name="theme_second">ThemeSecond</string>
+    <string name="fragment_label">это фрагмент</string>
+    <string name="activity_label">это активити</string>
 </resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".kotlin.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_label"
+        android:textColor="?colorPrimary"
+        android:textSize="@dimen/labelTextSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_inside_fragment_local"
+        android:gravity="center"
+        android:textColor="?colorPrimary"
+        android:textSize="@dimen/labelTextSize" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/btnThemeOneLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_one"
+            android:textColor="?colorSecondary" />
+
+        <RadioButton
+            android:id="@+id/btnThemeSecondLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_second"
+            android:textColor="?colorSecondary" />
+    </RadioGroup>
+</LinearLayout>

@@ -2,11 +2,9 @@ package ru.geekbrains.themechanger.kotlin
 
 import android.os.Bundle
 import android.view.View
-import android.widget.RadioButton
 import androidx.appcompat.app.AppCompatActivity
 import ru.geekbrains.themechanger.R
 import ru.geekbrains.themechanger.databinding.ActivityMainBinding
-import ru.geekbrains.themechanger.databinding.FragmentMainBinding
 
 const val ThemeOne = 1
 const val ThemeSecond = 2
@@ -30,7 +28,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     // интересный факт, если не вынести init() в onResume() то кнопки radioGroup не будут менять свой статус check
     override fun onResume() {
         super.onResume()
-        supportFragmentManager.beginTransaction().replace(R.id.fragment_container,MainFragment.newInstance()).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container_first,FirstFragment.newInstance()).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container_second,SecondFragment.newInstance()).commit()
         init()
     }
     private fun init() {

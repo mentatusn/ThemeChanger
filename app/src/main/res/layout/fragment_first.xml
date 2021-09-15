@@ -12,7 +12,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/fragment_label"
+        android:textColor="?colorPrimary"
+        android:textSize="@dimen/labelTextSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/label_inside_fragment"
+        android:gravity="center"
+        android:textColor="?colorPrimary"
         android:textSize="@dimen/labelTextSize" />
 
     <RadioGroup
@@ -24,12 +33,16 @@
             android:id="@+id/btnThemeOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/theme_one" />
+            android:text="@string/theme_one"
+            android:textColor="?colorSecondary" />
 
         <RadioButton
             android:id="@+id/btnThemeSecond"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/theme_second" />
+            android:text="@string/theme_second"
+            android:textColor="?colorSecondary" />
     </RadioGroup>
+
+
 </LinearLayout>
